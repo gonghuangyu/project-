@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录-作业管理系统</title>
+    <script src="./css/demo.css"></script>
+
+</head>
+<body align="center" >
+<h3>农夫作业管理系统</h3>
+欢迎登录
+<br>
+    <form action="/user/verify" method="POST">
+
+        <p>
+            <label>学号/工号</label>
+            <input type="text" name="account" />
+        </p>
+        <p>
+            <label>密码</label>
+            <input type="password" name="password" />
+        </p>
+        <p class="submit">
+            <input type="submit" value="登录" />
+        </p>
+    </form>
+
+    <div class="reg-bar">
+        <a href="/user/register">没有账号？前往注册</a>
+    </div>
+</div>
+
+</body>
+</html>
